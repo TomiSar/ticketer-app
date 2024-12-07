@@ -18,6 +18,7 @@ import {
   Ticket,
   XCircle,
 } from 'lucide-react';
+import PurchaseTicket from './PurchaseTicket';
 
 function EventCard({ eventId }: { eventId: Id<'events'> }) {
   const { user } = useUser();
@@ -198,7 +199,7 @@ function EventCard({ eventId }: { eventId: Id<'events'> }) {
                   : 'bg-green-50 text-green-700'
               }`}
             >
-              £{event.price.toFixed(2)}
+              {event.price.toFixed(2)}€
             </span>
             {availability.purchasedCount >= availability.totalTickets && (
               <span className='px-4 py-1.5 bg-red-50 text-red-700 font-semibold rounded-full text-sm'>
