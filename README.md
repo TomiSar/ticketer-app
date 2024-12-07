@@ -52,11 +52,10 @@ Ok to proceed? (y) y
 ### shadcn/ui Components
 - npx shadcn@latest init
 - npx shadcn@latest add button
+- npx shadcn@latest add toast
 
 
 ### Documentation
-
-- https://github.com/sonnysangha/ticket-marketplace-saas-nextjs15-convex-clerk-stripe-connect?tab=readme-ov-file
 - https://ui.shadcn.com/
 - https://dashboard.clerk.com/apps/app_2ppxHUKDHOe9jlAzU5yAeG8Ruix/instances/ins_2ppxHakGS5dSOKjnhNh1PFCBRJF
 - https://docs.convex.dev/quickstart/nextjs

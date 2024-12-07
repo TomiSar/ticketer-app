@@ -19,7 +19,6 @@ function PurchaseTicket({ eventId }: { eventId: Id<'events'> }) {
 
   const [timeRemaining, setTimeRemaining] = useState<string>('');
   const [isLoading, setIsLoading] = useState<boolean>(false);
-
   const offerExpiresAt = queuePosition?.offerExpiresAt ?? 0;
   const isExpired = Date.now() > offerExpiresAt;
 

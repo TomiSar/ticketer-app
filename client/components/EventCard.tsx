@@ -170,8 +170,10 @@ function EventCard({ eventId }: { eventId: Id<'events'> }) {
         </div>
       )}
 
+      {/* Event Details */}
       <div className={`p-6 ${imageUrl ? 'relative' : ''}`}>
         <div className='flex justify-between items-start'>
+          {/* Event Name and Owner Badge */}
           <div>
             <div className='flex flex-col items-start gap-2'>
               {isEventOwner && (
@@ -208,6 +210,7 @@ function EventCard({ eventId }: { eventId: Id<'events'> }) {
           </div>
         </div>
 
+        {/* Event Details */}
         <div className='mt-4 space-y-3'>
           <div className='flex items-center text-gray-600'>
             <MapPin className='w-4 h-4 mr-2' />
