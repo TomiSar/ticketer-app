@@ -39,6 +39,7 @@ Ok to proceed? (y) y
 
 - npm install @clerk/nextjs --legacy-peer-deps
 - npm install convex --legacy-peer-deps
+- npm install stripe --legacy-peer-deps
 
 ### Convex
 - npx convex login

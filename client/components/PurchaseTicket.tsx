@@ -29,9 +29,9 @@ function PurchaseTicket({ eventId }: { eventId: Id<'events'> }) {
         return;
       }
 
-      const timeDiff = offerExpiresAt - Date.now();
-      const minutes = Math.floor(timeDiff / 1000 / 60);
-      const seconds = Math.floor((timeDiff / 1000) % 60);
+      const diff = offerExpiresAt - Date.now();
+      const minutes = Math.floor(diff / 1000 / 60);
+      const seconds = Math.floor((diff / 1000) % 60);
 
       if (minutes > 0) {
         setTimeRemaining(
