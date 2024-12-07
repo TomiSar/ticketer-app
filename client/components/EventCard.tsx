@@ -131,8 +131,7 @@ function EventCard({ eventId }: { eventId: Id<'events'> }) {
       return (
         <div className='mt-4'>
           {queuePosition.status === 'offered' && (
-            // <PurchaseTicket eventId={eventId} />
-            <div>PurchaseTicket</div>
+            <PurchaseTicket eventId={eventId} />
           )}
           {renderQueuePosition()}
           {queuePosition.status === 'expired' && (
