@@ -1,26 +1,26 @@
 'use client';
 
-import { Id } from '@/convex/_generated/dataModel';
-import { useUser } from '@clerk/nextjs';
-import { useRouter } from 'next/navigation';
 import { api } from '@/convex/_generated/api';
 import { useQuery } from 'convex/react';
-import { useStorageUrl } from '@/lib/utils';
-import Image from 'next/image';
+import { Id } from '@/convex/_generated/dataModel';
 import {
   CalendarDays,
+  MapPin,
+  Ticket,
   Check,
   CircleArrowRight,
   LoaderCircle,
-  MapPin,
+  XCircle,
   PencilIcon,
   StarIcon,
-  Ticket,
-  XCircle,
 } from 'lucide-react';
+import { useUser } from '@clerk/nextjs';
 import PurchaseTicket from './PurchaseTicket';
+import { useRouter } from 'next/navigation';
+import { useStorageUrl } from '@/lib/utils';
+import Image from 'next/image';
 
-function EventCard({ eventId }: { eventId: Id<'events'> }) {
+export default function EventCard({ eventId }: { eventId: Id<'events'> }) {
   const { user } = useUser();
   const router = useRouter();
   const event = useQuery(api.events.getByEventId, { eventId });
@@ -170,10 +170,8 @@ function EventCard({ eventId }: { eventId: Id<'events'> }) {
         </div>
       )}
 
-      {/* Event Details */}
       <div className={`p-6 ${imageUrl ? 'relative' : ''}`}>
         <div className='flex justify-between items-start'>
-          {/* Event Name and Owner Badge */}
           <div>
             <div className='flex flex-col items-start gap-2'>
               {isEventOwner && (
@@ -210,7 +208,6 @@ function EventCard({ eventId }: { eventId: Id<'events'> }) {
           </div>
         </div>
 
-        {/* Event Details */}
         <div className='mt-4 space-y-3'>
           <div className='flex items-center text-gray-600'>
             <MapPin className='w-4 h-4 mr-2' />
@@ -252,5 +249,3 @@ function EventCard({ eventId }: { eventId: Id<'events'> }) {
     </div>
   );
 }
-
-export default EventCard;

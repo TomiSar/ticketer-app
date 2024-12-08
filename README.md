@@ -54,7 +54,9 @@ Ok to proceed? (y) y
 - npx shadcn@latest init
 - npx shadcn@latest add button
 - npx shadcn@latest add toast
-
+- npx shadcn@latest add form
+- npx shadcn@latest add input
+- npx shadcn@latest add textarea
 
 ### Documentation
 - https://ui.shadcn.com/
@@ -62,8 +64,13 @@ Ok to proceed? (y) y
 - https://docs.convex.dev/quickstart/nextjs
 - https://docs.convex.dev/auth/clerk
 - https://clerk.com/nextjs-authentication?utm_medium=youtube&utm_source=sonny-sangha&utm_campaign=ticketmaster-clone
+- https://docs.stripe.com/connect/onboarding/quickstart?client=next
 - https://lcl.host/
 
 ### Set Up Environment Variables
 
 - Create a new file named .env in the root of your project and add the following content:
+
+### Start application
+- npm run dev (front end)
+- npx convex dev (back end)
