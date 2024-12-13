@@ -40,6 +40,7 @@ Ok to proceed? (y) y
 - npm install @clerk/nextjs --legacy-peer-deps
 - npm install convex --legacy-peer-deps
 - npm install stripe --legacy-peer-deps
+- npm i react-qr-code --legacy-peer-deps
 
 ### Convex
 - npx convex login
@@ -65,7 +66,12 @@ Ok to proceed? (y) y
 - https://docs.convex.dev/auth/clerk
 - https://clerk.com/nextjs-authentication?utm_medium=youtube&utm_source=sonny-sangha&utm_campaign=ticketmaster-clone
 - https://docs.stripe.com/connect/onboarding/quickstart?client=next
+- https://docs.stripe.com/testing?testing-method=card-numbers#visa
 - https://lcl.host/
+
+### Stripe CLI
+- https://dashboard.stripe.com/test/webhooks/create?endpoint_location=local
+- stripe login
 
 ### Set Up Environment Variables
 
