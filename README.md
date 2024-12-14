@@ -40,7 +40,7 @@ Ok to proceed? (y) y
 - npm install @clerk/nextjs --legacy-peer-deps
 - npm install convex --legacy-peer-deps
 - npm install stripe --legacy-peer-deps
-- npm i react-qr-code --legacy-peer-deps
+- npm install react-qr-code --legacy-peer-deps
 
 ### Convex
 - npx convex login
